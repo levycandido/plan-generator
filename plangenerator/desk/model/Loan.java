@@ -1,4 +1,4 @@
-package com.levycandido.plangenerator.model;
+package com.levycandido.plangenerator.desk.model;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,4 +1,4 @@
-package com.levycandido.plangenerator.service;
+package com.levycandido.plangenerator.desk.service;
 
 import java.util.ArrayList;
 import java.util.List;

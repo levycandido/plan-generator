@@ -1,4 +1,4 @@
-package com.levycandido.plangenerator.service;
+package com.levycandido.plangenerator.desk.service;
 
 import java.awt.Desktop;
 import java.io.File;

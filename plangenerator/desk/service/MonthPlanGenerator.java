@@ -1,10 +1,9 @@
-package com.levycandido.plangenerator.service;
+package com.levycandido.plangenerator.desk.service;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.text.DecimalFormat;
 
-import com.levycandido.plangenerator.model.Loan;
+import com.levycandido.plangenerator.desk.model.Loan;
 
 public class MonthPlanGenerator {
 

@@ -1,4 +1,4 @@
-package com.levycandido.plangenerator.api;
+package com.levycandido.plangenerator.web.api;
 
 
 import org.springframework.boot.SpringApplication;

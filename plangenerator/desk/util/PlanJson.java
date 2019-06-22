@@ -1,4 +1,4 @@
-package com.levycandido.plangenerator.util;
+package com.levycandido.plangenerator.desk.util;
 
 
 import java.text.DecimalFormat;
@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.levycandido.plangenerator.service.Payment;
-import com.levycandido.plangenerator.service.Plan;
+import com.levycandido.plangenerator.desk.service.Payment;
+import com.levycandido.plangenerator.desk.service.Plan;
 
 
 public class PlanJson {

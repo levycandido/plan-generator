@@ -1,4 +1,4 @@
-package com.levycandido.plangenerator.util;
+package com.levycandido.plangenerator.desk.util;
 
 import java.io.File;
 import java.text.ParseException;
@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import com.levycandido.plangenerator.model.Loan;
+import com.levycandido.plangenerator.desk.model.Loan;
 
 public class DialogParameter {
 

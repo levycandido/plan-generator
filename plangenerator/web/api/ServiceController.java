@@ -1,4 +1,4 @@
-package com.levycandido.plangenerator.api;
+package com.levycandido.plangenerator.web.api;
 
 
 import org.springframework.stereotype.Controller;
@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.levycandido.plangenerator.dao.LoanDto;
-import com.levycandido.plangenerator.model.Loan;
-import com.levycandido.plangenerator.service.MonthPlanGenerator;
-import com.levycandido.plangenerator.service.Plan;
-import com.levycandido.plangenerator.util.LoanValidator;
-import com.levycandido.plangenerator.util.PlanJson;
+import com.levycandido.plangenerator.desk.dao.LoanDto;
+import com.levycandido.plangenerator.desk.model.Loan;
+import com.levycandido.plangenerator.desk.service.MonthPlanGenerator;
+import com.levycandido.plangenerator.desk.service.Plan;
+import com.levycandido.plangenerator.desk.util.LoanValidator;
+import com.levycandido.plangenerator.desk.util.PlanJson;
 
 
 @Controller

@@ -1,4 +1,4 @@
-package com.levycandido.plangenerator.dao;
+package com.levycandido.plangenerator.desk.dao;
 
 import java.io.Serializable;
 import java.util.Date;
