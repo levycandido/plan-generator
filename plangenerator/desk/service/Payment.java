@@ -6,6 +6,10 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
 
+/**
+ * @author levyc
+ *
+ */
 public class Payment {
 	private double paymentAmount;
 	private double principal;

@@ -16,6 +16,10 @@ public class PlanPrinter {
 		this.plan = plan;
 	}
 
+	/**Write the payment on CSV*/
+	/**
+	 * @return
+	 */
 	public String getPaymentCSV() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Date|Annuity (Borrower Payment Amount)|Principal|Interest|initial Outstanding Principal|"
@@ -26,7 +30,11 @@ public class PlanPrinter {
 		}
 		return sb.toString();
 	}
-
+	
+    /**Create a File*/
+	/**
+	 * @param file
+	 */
 	public void printPaymentPlan(File file) {
 		/** Delete the file case it already exists */
 		if (file.exists()) {
@@ -38,13 +46,17 @@ public class PlanPrinter {
 			e.printStackTrace();
 		}
 		writePaymentPlan(file);
-		int option = JOptionPane.showConfirmDialog(null, "CVS file exported successfully. Would you like to open it?",
+		int option = JOptionPane.showConfirmDialog(null, "CSV file exported successfully. Would you like to open it?",
 				"Plan Generator", JOptionPane.OK_CANCEL_OPTION);
 		if (option == JOptionPane.OK_OPTION) {
 			openfile(file);
 		}
 	}
-
+	
+    /**Open the file*/
+	/**
+	 * @param file
+	 */
 	private void openfile(File file) {
 		try {
 			Desktop desktop = null;

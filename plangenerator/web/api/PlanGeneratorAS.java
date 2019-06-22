@@ -14,27 +14,23 @@ import com.levycandido.plangenerator.desk.util.LoanValidator;
 import com.levycandido.plangenerator.desk.util.PlanJson;
 
 
-@Controller
-public class ServiceController {
 
-	private final String url = "/generate-plan";
-	
-	@PostMapping(url)
-	@ResponseBody
-	public Object sendPaymentPlan(
-			@RequestBody LoanDto ld)
-			 {
-		
-		LoanValidator loanValidator = new LoanValidator(ld.getLoanAmount(), ld.getNominalRate(), ld.getDuration(), ld.getStartDate());
+/**
+ * @author levyc
+ *
+ */
+public class PlanGeneratorAS {
+
+	public Object getJsonPaymentPlan(LoanDto loanDto) {
+		LoanValidator loanValidator = new LoanValidator(loanDto.getLoanAmount(), loanDto.getNominalRate(), loanDto.getDuration(), loanDto.getStartDate());
 		if (!loanValidator.validate()) {
 			return null;
 		}
-		Loan loan = new Loan(ld.getLoanAmount(), ld.getNominalRate()*0.01, ld.getDuration(), ld.getStartDate());
+		Loan loan = new Loan(loanDto.getLoanAmount(), loanDto.getNominalRate()*0.01, loanDto.getDuration(), loanDto.getStartDate());
 		MonthPlanGenerator monthPlanGenerator = new MonthPlanGenerator(loan);
 		Plan pp = monthPlanGenerator.getPaymentCal();
 		PlanJson planJson = new PlanJson(pp);
-		Object jsonPaymentPlan = planJson.getJsonPaymentPlan();
-		return jsonPaymentPlan;
-		
+		Object jsonPayment = planJson.getJsonPaymentPlan();
+		return jsonPayment;
 	}
 }

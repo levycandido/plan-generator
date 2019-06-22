@@ -3,6 +3,11 @@ package com.levycandido.plangenerator.desk.service;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * @author levyc
+ *
+ */
 public class Plan {
 
 	private List<Payment> payments = new ArrayList<Payment>();

@@ -7,7 +7,6 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
-
 import com.levycandido.plangenerator.desk.model.Loan;
 
 public class DialogParameter {
@@ -55,7 +54,7 @@ public class DialogParameter {
 		String dir;
 		File file = null;
 		JFileChooser fileChooser = new JFileChooser();
-		FileNameExtensionFilter filter = new FileNameExtensionFilter("*.cvs", "csv");
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("*.csv", "csv");
 		fileChooser.setFileFilter(filter);
 		if (fileChooser.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
 			file = fileChooser.getSelectedFile();
